@@ -1,0 +1,5 @@
+1. Create a trigger to back up the product before a user updates it in table “product”.
+2. Create a table “seller_report” that contains two column, the seller name and cross sale for each seller then populate data into that table.
+3. Create a trigger to recalculate data in table “seller_report” every time after a user update data in table product.
+4. Create a trigger to delete a product by category id after a user deletes a category from table “category”.
+5. Create a trigger to delete a sale by product id after a user deletes a product from table “product”.

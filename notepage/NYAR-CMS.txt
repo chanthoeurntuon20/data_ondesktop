@@ -1,0 +1,120 @@
+<html <?php language_attributes(); ?>>
+<head>
+    <meta charset = "<?php bloginfo('charset');?>"> 
+    <title> <?php bloginfo('name');?></title>
+     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+</head>
+<body>
+  <header><?php get_header(); ?></header>
+    <div>
+      <?php if(have_posts()):?>
+        <?php  while(have_posts()):?>
+          <div class="card">
+            <h3><?php the_title();?></h3>
+              <?php 
+                  global $post;
+                  $args = array(
+                    'title_li'=>'',
+                    'child_of'=>$post->ID
+                  );
+                  wp_list_pages($args);
+              ?>
+            </div>
+            <?php the_post();?>
+          <div class="contant"><?php the_content();?></div>
+        <?php endwhile;?>  
+      <?php else: echo "the post not found"; endif; ?>
+    </div>
+</body>
+</html>
+
+=-=================function
+ <?php 
+    function addMenu(){
+        register_nav_menus(array(
+            'pramary'=>__('Pramary Menus'),
+            'footer'=>__('Footer Menus')
+        ));
+    };
+    add_action('after_setup_theme','addMenu');
+
+    function addFeature(){
+        add_theme_support('post-thumbnails');
+    }
+    add_action('after_setup_theme','addFeature');
+?>
+======page
+<html <?php language_attributes(); ?>>
+<head>
+    <meta charset = "<?php bloginfo('charset');?>"> 
+    <title> <?php bloginfo('name');?></title>
+     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+</head>
+<body>
+  <header><?php get_header(); ?></header>
+    <div>
+      <?php if(have_posts()):?>
+        <?php  while(have_posts()):?>
+          <div class="card">
+            <h3><?php the_title();?></h3>
+              <?php 
+                  global $post;
+                  $args = array(
+                    'title_li'=>'',
+                    'child_of'=>$post->ID
+                  );
+                  wp_list_pages($args);
+              ?>
+            </div>
+            <?php the_post();?>
+          <div class="contant"><?php the_content();?></div>
+        <?php endwhile;?>  
+      <?php else: echo "the post not found"; endif; ?>
+    </div>
+</body>
+</html>
+=============
+
+
+/* theme name: nysar_yam
+author:root
+version: 1.0
+*/
+body{
+    margin: 0;
+    padding: 0;
+  background:oraget;
+}
+/*.container{
+    margin: 20ox;
+    background-color: aliceblue;
+}*/
+ul{
+    display: flex;
+    background-color: black;
+    list-style: none;
+}
+ul li{
+    padding: 10px 15px;
+}
+ul li a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+==========
+
+ <html <?php language_attributes(); ?>>
+<head>
+    <meta charset = "<?php bloginfo('charset');?>"> 
+    <title> <?php bloginfo('name');?></title>
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+</head>
+<body>
+  <header>
+    <?php wp_nav_menu(); ?>
+  </header>
+</body>
+</html>
+
+

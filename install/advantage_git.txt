@@ -1,0 +1,121 @@
+
+================git 
+---advantage
+
+1.Distributed model: This means your work is your own.
+ You can let otherls see only what is necessary. Not everything has to be public. 
+2.Branching and merging are easy: Branching is a walk in the park. 
+It feels like a natural part of the workflow. 
+They are cheap (fast and consume very little space) so that you can branch whenever you want. 
+3.Workflow is flexible: Compared to Centralized VCS, git has the qualities that allow to choose your own workflow. 
+It can be as simple as a centralised workflow to as hierarchical as the dictator-lieutenant workflow. 
+4.Data integrity is assured: Because git uses SHA1 trees,
+ data corruption due to external reasons can be easily detected.
+5.Icing on the cake:
+-Fast
+-Staging
+-Free
+----Disadvantage
+1.Steep learning curve: Many commands with many options, some commands are non-intuitive 
+and need a level of understanding the internals of git, commands and arguments are inconsistent
+ to some degree
+2.Binary files are a big no: If your project has non-text files that are updated frequently 
+(images for websites or MS Office documents), then git becomes bloated and slow.
+
+=============composer
+
+Composer is a dependency manager for PHP (similar to Bundler for Ruby apps). 
+Composer allows developers to specify project dependencies in a composer. ... 
+Composer makes it easier to keep vendor libraries out of your repo, meaning 
+that only application code goes in the git repository
+===========What is composer
+
+Composer is a dependency manager for PHP. Composer will allow you to manage your libraries,
+ classes, and functions throughout your applications.
+ These libraries and classes that you create for Composer are referred to as Packages.
+
+===composer command
+
+$ composer install
+This command reads the content of the composer.json from the current folder 
+and installs the selected dependencies into vendor folder.
+
+If composer.lock exists in the current directory, the specific version will 
+be used instead of those selected by Composer. It assures that there’s a compatibility between the downloaded and used packages.
+
+If composer.lock doesn’t exist in the current directory, it will be created after the bundles’ installation.
+
+$ composer dump-autoload
+loDump-autoload allows to refresh the content of autoload.php and to generate new autoload entries.
+
+$ composer self-update
+Used to update Composer version.
+
+$ composer update 
+This command matches all dependencies and saves the specific versions to composer.lock.
+
+$ composer update vendor/package vendor/package2
+This command updates selected packages if stable updates of these bundles are available.
+
+$ composer show
+absolvent/phpunit-symfony
+acid/symfony
+admafa/proyecto-final-symfony
+...
+It displays the list of available bundles in the library.
+
+$ composer show vendor/package
+$ composer show vendor/package 1.0.2
+Returns the details of the bundle or of its particular version.
+
+$ composer show -i
+alexandresalome/php-selenium     1.0.1      PHP Library for Selenium
+behat/behat                      v2.5.0     Scenario-oriented BDD framework for ...
+behat/common-contexts            v1.2.0     Commonly used contexts for Behat
+...
+Shows installed bundles and their versions.
+
+$ composer show -s
+...
+requires
+php >=5.4.0
+symfony/symfony 2.3.*
+symfony/assetic-bundle 2.3.*
+symfony/swiftmailer-bundle 2.3.*
+symfony/monolog-bundle 2.3.*
+...
+Command use to see how Composer interprets composer.json file.
+
+
+
+===============firebase
+----advantage
+-JSON (Javascript Object Notation) storage means no barrier between data and objects
+-simple serialization of app state
+-3-way data binding via Angularfire
+-minimal setup
+-easy access to data, files, auth, and more
+-no server infrastructure needed to power apps with data
+-massive storage size potential
+-real time
+-pretty much the most advanced hosted BaaS solution
+-highly secure
+-pserverless
+-hey, it’s Google!
+u
+------disadvantage
+
+-not widely used or battle tested for Enterprises
+-very limited querying and indexing
+-no aggregation
+-no map reduce
+-can’t query or list users or stored files
+****
+Firebase is Google's mobile application development platform that helps you build, improve, and grow your app.
+=====why use firebase
+
+ff-Incredibly Built-In Analytics
+-App Development Made Easy
+-Growth and User Engagement
+-Increase Your Earnings
+

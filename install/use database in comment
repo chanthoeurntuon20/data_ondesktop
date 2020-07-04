@@ -1,0 +1,20 @@
+======
+mysql -u root -p:start comment
+1.create database test_comment
+2.create table tbl_student(
+    -> id int auto_increment primary key,
+    -> name varchar(100),
+    -> age int(20),
+    -> province varchar(225)
+    -> );
+3.use name_database
+4.insert into tbl_student(name,age,province)values("chanthoeurn",20,"kampong cham");
+5.delete from tbl_student where id = 1;
+6.update tbl_student set name = "Chanthoeurn"where id = 2;
+7.select name from tbl_student where id = 2.Orselect* from tbl_student ;
+8.select char_length('chanthoeurn');//count letter of chanthoeurn
+9. //insert array into database
+10.INSERT INTO books(client, DATA) VALUES (    'Joe',    '{ "title": "Siddhartha", "author": { "first_name": "Herman", "last_name": "Hesse" } }' ),
+(    'Jenny',    '{ "title": "Dharma Bums", "author": { "first_name": "Jack", "last_name": "Kerouac" } }' ),
+(    'Jenny',    '{ "title": "100 años de soledad", "author": { "first_name": "Gabo", "last_name": "Marquéz" } }' );
+11.select *from boos;

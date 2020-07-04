@@ -1,0 +1,21 @@
+ctrl+l : clear server
+==============help
+npm 
+npm -help
+npm help
+==============version
+npm -v
+npm --verion
+===============get package.json file
+npm init
+npm --yes
+===============change the 
+npm config set init-author-name "Tuon"
+npm set init-license "IMT"
+=====================get node_modules
+$ npm install lodash --save
+
+
+
+
+

@@ -1,0 +1,8 @@
+sort 
+reverse
+random 
+map
+visible(hide/show)
+add
+filter
+timer

@@ -1,0 +1,6 @@
+======================================
+how to install laravel
+======================================
+1. cmd => composer global require laravel/installer
+2. composer create-project --prefer-dist laravel/laravel name-laravel
+3. cd project => php artisan server(copy localhost-number)

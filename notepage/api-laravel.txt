@@ -1,0 +1,6 @@
+how to get data in laravel
+step to get api: 
+make route
+make controller
+make model
+get api in postman

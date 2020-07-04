@@ -1,0 +1,19 @@
+1. npm -v
+2. npm --version
+3. npm init
+	yes (package.json)=> remove
+4. npm init --yes
+5. npm config set init-author-name "chanthoeurn";
+6. npm set init-license "MIT" => remove
+7. npm init -y
+8. npm get init-author-name
+9. npm config get init-author-name
+10. npm config delete init-author-name
+11. npm config delete init-license=> remove "MIT => ISC"
+12. npm install lodash --save
+13. index.js
+	- const_ = require('lodash');
+	const numbers = [33,46,76,44,32,3];
+	_.each(numbers,function(number,i){
+		
+	})

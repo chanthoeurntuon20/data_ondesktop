@@ -1,0 +1,49 @@
+package code_reveiw_project;
+
+import java.util.List;
+
+public class YourProject {
+
+	private static final int ArrayList = 0;
+
+	public static void main(String[] args) throws Exception {
+		String filePath = "D:\\TEST.csv";
+		
+		// 1. Parse file
+		List<String> result = PncStudentResultsParser.readFile(filePath);
+		//System.out.println(result);null
+		// 2. Process student mails sending
+		processStudents(result);
+	}
+	
+	/**
+	 * @param studentResults each line of this list is formated as follows :
+	 *   FIRST-NAME;LAST-NAME;Q1;Q2 ..., Qi;COMMENT
+	 */
+	public static void processStudents(List<String> studentResults){
+		// YOUR CODE
+		String[] student = new String("sreynet;hak;25,30;not bad").split(";");
+		String mailAddress= "sreynet.hak@student.passerellesnumeriques.org";
+		String mailBody= "Hello" + " "+ student[0] +","+ "\n" + student[1] + student[2] + student[3] + "/100";
+		
+		//For each students , send a mail using this call:
+		PncMail.sendMail(mailAddress, mailBody);
+	}
+
+}
+=========
+String student = new String("sreynet;hak;25,30;not bad");
+		// YOUR CODE
+		String mailAddress= "";
+		String mailBody= "";
+		String[] students ;
+		String a= "";
+		for(int i = 0; i < student.length(); i++) {
+			students = student.split(";");//split data
+			for(int j = 0; j < students.length; j++) {
+				a = students[j];
+			}
+		}
+		System.out.println(a);
+		//For each students , send a mail using this call:
+		PncMail.sendMail(mailAddress, mailBody);

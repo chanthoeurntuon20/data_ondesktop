@@ -1,0 +1,16 @@
+php artisan make:migration create_Teachers_table
+php artisan make:controller TeacherController;
+php artisan serve
+php artisan make:migration 
+
+1.view:
+	create
+	index
+	show
+2.Controller to make route:php artisan make:controller TeacherController;
+3.create database and config ( in env):
+4.create table:php artisan make:migration create_Teachers_table=> php artisan migrate(nametable mean s)
+5.create model to controll table(1model control 1table):php artisan make:model nameModel(name the same class Teacher)
+6 take model to use in controller(use APP\Teachers)
+
+view=>route=>controller=>model=>check database=>model=>controller=>view.

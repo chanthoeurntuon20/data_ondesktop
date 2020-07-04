@@ -1,0 +1,15 @@
+live sass compiler
+setting=>live sass compiler=>Edit in settings.json
+liveSassCompile.settings.formats
+=="liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/css"
+        },
+        {
+            "format": "expanded",
+            "compressed": ".min.css",
+            "savePath": "/css"
+        }
+    ]

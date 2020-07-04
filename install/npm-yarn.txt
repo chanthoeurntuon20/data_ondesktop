@@ -1,0 +1,504 @@
+bradtraversy / yarncrashcourse
+
+
+Sign inSign up
+
+yarncrashcourse
+
+
+# GET VERSION
+
+yarn -v (or --version)
+
+
+# GET HELP
+
+yarn help
+
+
+# CREATE PACKAGE.JSON
+
+yarn init
+
+yarn init -y // Use defaults
+
+
+# SET DEFAULTS
+
+yarn config set init-license ISC
+
+
+# GET DEFAULTS
+
+yarn config get init-license
+
+
+# REMOVE DEFAULTS
+
+yarn delete init-license
+
+
+# INSTALLING LOCAL PACKAGES
+
+yarn add lodash
+
+yarn add moment
+
+
+# INSTALL FROM PACKAGE.JSON
+
+(add "gulp":"*")
+
+yarn install
+
+
+# REMOVING MODULES
+
+yarn remove lodash
+
+10:21 AM
+bradtraversy / yarncrashcourse
+
+
+Sign inSign up
+
+yarncrashcourse
+
+
+# GET VERSION
+
+yarn -v (or --version)
+
+
+# GET HELP
+
+yarn help
+
+
+# CREATE PACKAGE.JSON
+
+yarn init
+
+yarn init -y // Use defaults
+
+
+# SET DEFAULTS
+
+yarn config set init-license ISC
+
+
+# GET DEFAULTS
+
+yarn config get init-license
+
+
+# REMOVE DEFAULTS
+
+yarn delete init-license
+
+
+# INSTALLING LOCAL PACKAGES
+
+yarn add lodash
+
+yarn add moment
+
+
+# INSTALL FROM PACKAGE.JSON
+
+(add "gulp":"*")
+
+yarn install
+
+
+# REMOVING MODULES
+
+yarn remove lodash
+
+
+# INSTALL CERTAIN VERSIONS
+
+yarn add lodash@4.17.3
+
+
+# FIND OUTDATED VERSIONS
+
+yarn outdated lodash
+
+yarn outdated
+
+
+# UPGRADE
+
+yarn upgrade lodash
+
+yarn upgrade
+
+
+# INSTALL GLOBAL MODULE (global must be put right after yarn)
+
+yarn global add nodemon
+
+
+# FIND ROOT FOLDER
+
+yarn global bin
+
+
+# REMOVE GLOBAL 
+
+yarn global remove nodemon
+
+
+# LISTING PACKAGES
+
+yarn list
+
+yarn list --depth=0
+
+yarn list --depth=1
+
+yarn list --pattern gulp
+
+
+# INSTALLING AS DEV DEPENDENCY
+
+yarn add gulp -D or --dev
+
+
+# REMOVE DEV DEPENDENCY
+
+yarn remove gulp
+
+
+#VERIFY THAT VERSIONS MATCH LOCK FILE
+
+yarn check
+
+
+# CREATE YARN.LOCK FILE
+
+yarn import
+
+
+# ADD SCRIPT
+
+"scripts": {
+
+    "dev": "nodemon index.js"
+
+  },
+
+
+
+# RUN SCRIPT
+
+yarn run dev
+
+
+# GET LICENSES
+
+yarn license
+
+
+# CREATE GZIP ARCHIVE OF DEPENDENCIES
+
+yarn pack
+
+yarn pack mydep
+
+
+# LIST GLOBAL CACHE PACKAGES
+
+yarn cache list
+
+yarn cache list --pattern lodash
+
+Comment on gist
+
+
+Sign in to commentor sign up to join this conversation on GitHub
+
+
+Desktop versio
+
+===================npm
+
+NPM Crash Course Commands
+
+
+npmcrashcourse.txt
+
+
+# GET VERSION
+
+npm -v (or --version)
+
+
+# GET HELP
+
+npm help
+
+npm
+
+
+# CREATE PACKAGE.JSON
+
+npm init
+
+npm init -y (or --yes)
+
+
+# SET DEFAULTS
+
+npm config set init-author-name "YOUR NAME"
+
+npm set init-license "MIT"
+
+
+# GET DEFAULTS
+
+npm config get init-author-name
+
+npm get init-license
+
+
+# REMOVE DEFAULTS
+
+npm config delete init-author-name
+
+npm delete init-license
+
+
+# INSTALLING LOCAL PACKAGES
+
+npm install lodash --save (or npm install --save lodash)
+
+npm install moment --save
+
+npm install gulp gulp-sass --save-dev
+
+
+# MOVE TO ANOTHER FOLDER
+
+npm install
+
+npm install --production
+
+
+# REMOVING MODULES
+
+npm uninstall gulp-sass --save-dev
+
+npm remove gulp --save-dev
+
+
+#INSTALL CERTAIN VERSIONS
+
+npm install lodash@4.17.3 --save
+
+
+# UPDATE
+
+npm update lodash --save
+
+
+# INSTALL GLOBAL MODULE
+
+npm install -g nodemon
+
+npm install -g live-server
+
+
+# RUN NODEMON
+
+nodemon
+
+
+# FIND ROOT FOLDER
+
+npm root -g
+
+
+# REMOVE GLOBAL PACKAGES
+
+npm remove -g nodemon
+
+
+# LISTING PACKAGES
+
+npm list
+
+npm list --depth 0
+
+npm list --depth 1
+
+
+# INSTALL LIVE-SERVER LOCALLY
+
+npm install live-server --save-dev
+
+
+# NPM SCRIPT
+
+"scripts": {
+
+    "start": "node index.js",
+
+    "dev": "live-server"
+
+  },
+
+￼
+
+erwindw 
+commented over 2 years ago
+
+Good tutorial, appreciated. Very minor detail. #INSTALL NODMON LOCALLY should be # INSTALL LIVE-SERVER LOCALLY
+
+￼
+
+bradtraversy 
+commented about 2 years ago
+
+@erwindw thanks, fixed
+
+Also guys, --save is not neede for NPM 5+
+
+￼
+
+luisSanchezCruz 
+commented almost 2 years ago
+
+thanks u r the best !!!
+
+￼
+
+Zed-M 
+commented over 1 year ago
+
+Thanks
+
+￼
+
+Rick0892 
+commented over 1 year ago
+
+I am new to NPM and your crash course for it gave me pretty much what i wanna know about NPM.
+Thanks
+
+￼
+
+RickJP 
+commented over 1 year ago
+
+Awesome. That's a good guide!
+
+￼
+
+RobelTekle74 
+commented over 1 year ago
+
+This is awesome. I am new to npm and I wanted to know how to create the gitignore file and how to put the modules in it.
+
+￼
+
+golamrabbiazad 
+commented over 1 year ago
+
+Lovely, Cleared about NPM concept. Bunch of Thanks ☺️
+
+￼
+
+lagupa 
+commented about 1 year ago
+
+You are a real concept artist teacher... please accept my kind boast in you but you very good teacher Brad. This days if I am learning something new in web dev I will youtube topic traversy media. You deserve the credit of hard bro!
+
+￼
+
+rodrigofmp 
+commented about 1 year ago
+
+Great! Thank you.
+
+￼
+
+Suyash-Purwar 
+commented 11 months ago
+
+I really appreciate your work Brad. Thanks for this cheatsheet
+
+￼
+
+Metzo00 
+commented 10 months ago
+
+thank you Brad. You are awesome man!
+
+￼
+
+KariNarhi 
+commented 9 months ago
+
+Great guide. Though I think that # MOVE TO ANOTHER FOLDER on line 29 should be # INSTALL TO ANOTHER FOLDER, because the commands "npm install" or "npm install --production" do not move the user or the files to another directory.
+
+￼
+
+hamid814 
+commented 9 months ago
+
+@erwindw thanks, fixed
+
+Also guys, --save is not neede for NPM 5+
+
+
+￼
+
+hamid814 
+commented 9 months ago
+
+the best tutorial ever,
+thanks and hope U bests
+
+￼
+
+chupacambra 
+commented 8 months ago
+
+You rock Brad! Keep up the good work.
+
+￼
+
+HusainMansuri1 
+commented 2 months ago
+
+Just Perfect!
+
+￼
+
+mike-4040 
+commented about 2 months ago
+
+Great list, thanks.
+
+I've found shortcodes:
+i for install
+-D for --save-dev
+are very convenient.
+
+￼
+
+Mubirupatrick2040 
+commented about 1 month ago
+
+Thanks Brad for the info, God bless you bro...
+
+Comment on gist
+
+
+Sign in to commentor sign up to join this conversation on GitHub
+
+
+Desktop version
+

@@ -1,0 +1,10 @@
+delimiter //
+CREATE TRIGGER after_user_update  AFTER UPDATE 
+ON TABLE product FOR EACH ROW 
+
+BEGIN
+UPDATE seller_report SET
+seller_name =    NEW.seller_name,
+total_sale_product = NEW.total_sale_product 
+
+	END //

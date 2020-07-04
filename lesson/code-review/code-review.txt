@@ -1,0 +1,49 @@
+public static int dayOfYear(int month, int dayOfMonth, int year) {
+if (month == 2) {
+dayOfMonth += 31;
+} else if (month == 3) {
+dayOfMonth += 59;
+}else if (month == 4) {
+dayOfMonth += 90;
+} else if (month == 5) {
+dayOfMonth += 31 + 28 + 31 + 30;
+} else if (month == 6) {
+dayOfMonth += 31 + 28 + 31 + 30 + 31;
+} else if (month == 7) {
+dayOfMonth += 31 + 28 + 31 + 30 + 31 + 30;
+} else if (month == 8) {
+dayOfMonth += 31 + 28 + 31 + 30 + 31 + 30 + 31;
+} else if (month == 9) {
+dayOfMonth += 31 + 28 + 31 + 30 + 31 + 30 + 31 + 31;
+} else if (month == 10) {
+dayOfMonth += 31 + 28 + 31 + 30 + 31 + 30 + 31 + 31 + 30;
+} else if (month == 11) {
+dayOfMonth += 31 + 28 + 31 + 30 + 31 + 30 + 31 + 31 + 30 + 31;
+} else if (month == 12) {
+dayOfMonth += 31 + 28 + 31 + 30 + 31 + 30 + 31 + 31 + 30 + 31 + 31;
+}
+return dayOfMonth;
+}
+
+
+Q1 DRY CLEAN : Remove the duplication of the days of month by using a loop and a structure of data (containing for each month the number of days in the month)
+==============================================================
+Answer: public static int dayOfYear(int month, int dayOfMonth, int year) {
+		int[] dayMonth = new int[]{31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+		int months;
+		for (int i = 0; i < month -1; i++) {
+			//System.out.println(daysOfMonths[i]);
+			dayOfMonth += dayMonth[i];		
+		}
+		return dayOfMonth;
+		}
+==============================================================
+
+Q2 FAILS FAST CLEAN :
+For each attribute of the function, apply one of the following change to asserrt we fails faster in case of wrong call ( you have to choose the change that fit the best)
+
+- change the type to an ENUM
+- change the type to a String or an class you have defined
+- check the value of the input are in a specified range and throw an exception if not
+
+- check the value of the input are in a specified range and return an error value if not ( like -1)

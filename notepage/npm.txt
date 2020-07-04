@@ -1,0 +1,18 @@
+npm i <package> : install local package.
+npm i -g <package> : install global package.
+npm un <package> : uninstall local package.
+npm up : npm update packages.
+npm t : run tests.
+npm ls : list installed modules.
+==========
+npm init
+npm init -y 
+npm install <package_name> --save-dev
+npm update <package_name>
+npm update <package_name> -g
+npm uninstall <package_name>
+npm install
+npm list
+npm list depth <number>
+npm -v or npm version
+

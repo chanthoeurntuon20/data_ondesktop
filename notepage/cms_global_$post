@@ -1,0 +1,79 @@
+
+===================
+	Wp_list_pages():get all pages as list
+====================================================================================
+<?php 
+        
+            $args = array(
+                'title_li'=>'',
+                'child_of'=>$post->ID,
+            );
+            wp_list_pages($args);?>
+?>
+======================
+	get id from page
+=====================================================================================
+<?php 
+            //get id post and page
+            global  $post;
+            echo $post->ID;
+            $args = array(
+                'title_li'=>'',
+                'child_of'=>$post->ID,
+            );
+            wp_list_pages($args);?>
+            <?php the_title()?>
+            <?php the_content()
+?>
+======================
+	$post->oist_parent:check who is parent or chail page
+=====================================================================================
+<?php 
+            
+        global $post;
+        if($post->post_parent == 0){
+             echo "The page that you conect to" ." ".$post->post_title." ".'is parent page';
+        }else{
+             echo "The page that you conect to"." ".$post->post_title." ".'is child page';
+        }
+        or
+        global $post;
+        if($post->post_parent != 0){
+            echo "the page you link named".$post->post_title."<h2 style = "color.red">child page</h2>"
+        }else{
+            echo "This is parent page"
+        }
+?>
+======================
+	$post->post_parent
+=====================================================================================
+ <?php 
+        global $post;
+        if(is_bool($post->post_parent == true)){
+            echo "The name of page  " .$post->post_title." is parent page";
+        }else{
+            echo "The name of page  " .$post->post_title." is child page";
+        }
+?>
+====================
+
+======================================================================================
+ <?php 
+          //  get id of page when we click on page
+               global $post;
+               $id = $post->ID;
+               echo $id;
+            $args = array(
+                'title_li'=>'',//without header page
+                'child_of'=> $id//display child of page by select id fo parent page
+            );
+            wp_list_pages($args);
+            the_content();
+            ?>
+====================
+get_the_title(int or $post)
+======================================================================================
+    <?php 
+        //get the title of page that have id = 19 in page.php
+        echo get_the_title(19);
+    ?>
